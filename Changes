@@ -1,4 +1,7 @@
 Revision history for Dist-Zilla-Plugin-InsertExample
 
+0.02      2013-06-17 06:29:14 America/New_York
+  - Fix typo in deps
+
 0.01      2013-06-17 06:27:37 America/New_York
   - initial version

@@ -20,16 +20,16 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Dist::Zilla::Plugin::InsertExample",
   "PREREQ_PM" => {
+    "Dist::Zilla" => 0,
     "Dist::Zilla::Role::FileFinderUser" => 0,
     "Dist::Zilla::Role::FileMunger" => 0,
-    "Dits::Zilla" => 0,
     "Moose" => 0
   },
   "TEST_REQUIRES" => {
     "Test::DZil" => 0,
     "Test::More" => "0.88"
   },
-  "VERSION" => "0.01",
+  "VERSION" => "0.02",
   "test" => {
     "TESTS" => "t/*.t"
   }

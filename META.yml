@@ -18,13 +18,13 @@ no_index:
   directory:
     - corpus
 requires:
+  Dist::Zilla: 0
   Dist::Zilla::Role::FileFinderUser: 0
   Dist::Zilla::Role::FileMunger: 0
-  Dits::Zilla: 0
   Moose: 0
   perl: v5.10.0
 resources:
   bugtracker: https://github.com/plicease/dist-zilla-plugin-insertexample/issues
   homepage: http://perl.wdlabs.com/Dist-Zilla-Plugin-InsertExample/
   repository: git://github.com/plicease/dist-zilla-plugin-insertexample.git
-version: 0.01
+version: 0.02

@@ -26,9 +26,9 @@
       },
       "runtime" : {
          "requires" : {
+            "Dist::Zilla" : "0",
             "Dist::Zilla::Role::FileFinderUser" : "0",
             "Dist::Zilla::Role::FileMunger" : "0",
-            "Dits::Zilla" : "0",
             "Moose" : "0",
             "perl" : "v5.10.0"
          }
@@ -52,6 +52,6 @@
          "web" : "https://github.com/plicease/dist-zilla-plugin-insertexample"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }
 

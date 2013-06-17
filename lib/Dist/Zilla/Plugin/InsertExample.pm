@@ -6,7 +6,7 @@ use v5.10;
 use Moose;
 
 # ABSTRACT: Insert example into your POD from a file
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 
 with 'Dist::Zilla::Role::FileMunger';
@@ -57,7 +57,7 @@ Dist::Zilla::Plugin::InsertExample - Insert example into your POD from a file
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
