@@ -1,0 +1,41 @@
+NAME
+    Dist::Zilla::Plugin::InsertExample - Insert example into your POD from a
+    file
+
+VERSION
+    version 0.01
+
+SYNOPSIS
+    In your dist.ini:
+
+     [InsertExample]
+
+    In your POD:
+
+     =head1 EXAMPLE
+ 
+     Here is an exaple that writes hello world to the terminal:
+ 
+     # EXAMPLE: example/hello.pl
+
+    File in your dist named example/hello.pl
+
+     #!/usr/bin/perl
+     say 'hello world';
+
+DESCRIPTION
+    This plugin takes examples included in your distribution and inserts
+    them in your POD where you have an EXAMPLE directive. This allows you to
+    keep a version in the distribution which can be run by you and your
+    users, as well as making it available in your POD documentation, without
+    the need for updating example scripts in multiple places.
+
+AUTHOR
+    Graham Ollis <plicease@cpan.org>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2013 by Graham Ollis.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
