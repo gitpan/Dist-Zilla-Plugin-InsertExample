@@ -4,7 +4,7 @@
       "Graham Ollis <plicease@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300034, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 5.006, CPAN::Meta::Converter version 2.133380",
    "license" : [
       "perl_5"
    ],
@@ -30,7 +30,7 @@
             "Dist::Zilla::Role::FileFinderUser" : "0",
             "Dist::Zilla::Role::FileMunger" : "0",
             "Moose" : "0",
-            "perl" : "v5.10.0"
+            "perl" : "5.006"
          }
       },
       "test" : {
@@ -52,6 +52,6 @@
          "web" : "https://github.com/plicease/dist-zilla-plugin-insertexample"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }
 

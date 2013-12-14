@@ -22,4 +22,4 @@ my $tzil = Builder->from_config(
 $tzil->build;
 
 my($pm) = grep { $_->name eq 'lib/DZT.pm' } @{ $tzil->files };
-like $pm->content, qr{^ say 'hello world';$}m, "module contains example file";
+ok $pm->content =~ m{^ say 'hello world';$}m, "module contains example file";

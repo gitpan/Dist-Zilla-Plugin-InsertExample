@@ -2,11 +2,10 @@ package Dist::Zilla::Plugin::InsertExample;
 
 use strict;
 use warnings;
-use v5.10;
 use Moose;
 
 # ABSTRACT: Insert example into your POD from a file
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 
 
 with 'Dist::Zilla::Role::FileMunger';
@@ -51,13 +50,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 Dist::Zilla::Plugin::InsertExample - Insert example into your POD from a file
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
@@ -78,6 +79,18 @@ File in your dist named example/hello.pl
  #!/usr/bin/perl
  say 'hello world';
 
+After dzil build your POD becomes:
+
+ =head1 EXAMPLE
+ 
+ Here is an example that writes hello world to the terminal:
+ 
+  #!/usr/bin/perl
+  say 'hello world';
+
+and example/hello.pl is there too (unless you prune it with another
+plugin).
+
 =head1 DESCRIPTION
 
 This plugin takes examples included in your distribution and
@@ -86,6 +99,10 @@ This allows you to keep a version in the distribution which
 can be run by you and your users, as well as making it
 available in your POD documentation, without the need for 
 updating example scripts in multiple places.
+
+When the example is inserted into your pod a space will be appended
+at the start of each line so that it is printed in a fixed width
+font.
 
 =head1 AUTHOR
 

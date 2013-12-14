@@ -1,5 +1,9 @@
 Revision history for Dist-Zilla-Plugin-InsertExample
 
+0.03      2013-12-13 21:19:45 -0500
+  - documentation
+  - support Perl 5.8
+
 0.02      2013-06-17 06:29:14 America/New_York
   - Fix typo in deps
 
